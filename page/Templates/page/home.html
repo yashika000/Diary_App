@@ -1,0 +1,35 @@
+{% extends 'page/header.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+                <img src="{% static 'images/createpage.jpg' %}"/>
+            </div>
+            <div class="card-content grey hoverable">
+                <div class="card-content brown hoverable ">
+                    {% if user.is_authenticated %}
+                    <a href="/page"><span class="card-title" >Create Your Notes</span></a>
+                    {% endif %}
+                  </div>
+          </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image">
+                  <img src="{% static 'images/viewpage.jpg' %}"/>
+              </div>
+              <div class="card-content grey hoverable">
+                    <div class="card-content pink lighten-1 hoverable ">
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'page:all_page'  %}"><span class="card-title" >View Your Notes</span></a>
+                        {% endif %}
+                      </div>
+              </div>
+            </div>
+          </div>
+      </div>
+{% endblock %}
+

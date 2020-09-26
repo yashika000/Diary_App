@@ -1,0 +1,11 @@
+{% extends "page/header.html" %}
+{% block content %}
+    <div>
+          <form action="" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+                    {{ form }}      
+                    <button type="submit" class="btn btn-outline-info" style="background-color: azure; color: cadetblue;">Upload</button>
+              </form>
+         
+      </div>
+{% endblock content %}

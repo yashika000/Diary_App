@@ -1,0 +1,10 @@
+{% extends "page/header.html" %}
+{% block content %}
+   <form method="POST">
+       {% csrf_token %}
+       {{form.as_p}}
+       <button type="submit" class="btn btn-outline-info" style="background-color: azure; color: cadetblue;">Login</button>
+   </form>
+
+
+{% endblock %}
