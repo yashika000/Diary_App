@@ -1,3 +1,5 @@
+Diary_App
+
 This is Django web app for creating,updating and deleting your notes.
 
 We need to register first to make and view the notes.
