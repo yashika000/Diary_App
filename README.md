@@ -9,5 +9,7 @@ To run this app We need django installed,
 After cloning this repository,run the following commands to run it locally,
 
 python manage.py makemigrations
+
 python manage.py migrate
+
 python manage.py runserver
